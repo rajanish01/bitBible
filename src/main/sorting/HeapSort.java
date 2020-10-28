@@ -1,4 +1,4 @@
 package main.sorting;
 
-public class Bubble {
+public class HeapSort {
 }

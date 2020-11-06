@@ -27,7 +27,7 @@ public class BinaryTree {
 
     public Node root;
 
-    public void inserUtil(int val) {
+    public void insertUtil(int val) {
         root = insert(val, root);
     }
 

@@ -37,13 +37,13 @@ public class BTTraversal {
     }
 
     public static void main(String[] args) {
-        tree.inserUtil(50);
-        tree.inserUtil(30);
-        tree.inserUtil(20);
-        tree.inserUtil(40);
-        tree.inserUtil(70);
-        tree.inserUtil(60);
-        tree.inserUtil(80);
+        tree.insertUtil(50);
+        tree.insertUtil(30);
+        tree.insertUtil(20);
+        tree.insertUtil(40);
+        tree.insertUtil(70);
+        tree.insertUtil(60);
+        tree.insertUtil(80);
 
         System.out.println("Inorder :- ");
         inOrder(tree.root);

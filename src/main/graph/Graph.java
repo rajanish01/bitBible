@@ -2,6 +2,10 @@ package main.graph;
 
 import java.util.ArrayList;
 
+/**
+ * @author Rajanish Ranjan
+ * @date 6-Nov-2020
+ */
 public class Graph {
 
     private final int vertices;

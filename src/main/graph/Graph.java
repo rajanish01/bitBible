@@ -58,11 +58,17 @@ public class Graph {
         }
     }
 
-    public void addEdge(int startNode, int endNode) {
+    public void addEdgeUnDirected(int startNode, int endNode) {
         this.adjacencyList.get(startNode).add(endNode);
         this.adjacencyList.get(endNode).add(startNode);
 
         this.adjacencyMatrix[startNode][endNode] = 1;
         this.adjacencyMatrix[endNode][startNode] = 1;
+    }
+
+    public void addEdgeDirected(int startNode, int endNode) {
+        this.adjacencyList.get(startNode).add(endNode);
+
+        this.adjacencyMatrix[startNode][endNode] = 1;
     }
 }

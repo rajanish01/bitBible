@@ -11,13 +11,13 @@ public class GraphTest {
         Graph graph = new Graph(5);
 
         // Adding edges one by one
-        graph.addEdge(0, 1);
-        graph.addEdge(0, 4);
-        graph.addEdge(1, 2);
-        graph.addEdge(1, 3);
-        graph.addEdge(1, 4);
-        graph.addEdge(2, 3);
-        graph.addEdge(3, 4);
+        graph.addEdgeUnDirected(0, 1);
+        graph.addEdgeUnDirected(0, 4);
+        graph.addEdgeUnDirected(1, 2);
+        graph.addEdgeUnDirected(1, 3);
+        graph.addEdgeUnDirected(1, 4);
+        graph.addEdgeUnDirected(2, 3);
+        graph.addEdgeUnDirected(3, 4);
 
         graph.printAdjacencyMatrix();
         graph.printAdjacencyList();

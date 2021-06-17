@@ -1,7 +1,7 @@
 package main.geek;
 
 import main.sorting.Sorting;
-import main.utils.Printer;
+import main.utils.Utility;
 
 import java.util.Scanner;
 
@@ -24,15 +24,11 @@ public class ArrayRotation {
     }
 
     public static void rotateRight(int[] arr, int d) {
-        while (d != 0) {
-            int i = 0;
-            int j = arr.length - 1;
-            while (i != j) {
-                Sorting.swap(i, j, arr);
-                i++;
-            }
-            d--;
-        }
+        if (arr.length == 1) return;
+
+        reverse(arr, 0, arr.length - 1);
+        reverse(arr, 0, d - 1);
+        reverse(arr, d, arr.length - 1);
     }
 
     public static void main(String[] args) {
@@ -56,11 +52,11 @@ public class ArrayRotation {
         int[] arrClone = arr.clone();
         System.out.println("\nLeft Rotation : ");
         rotateLeft(arrClone, d);
-        Printer.print(arrClone);
+        Utility.print(arrClone);
 
         arrClone = arr.clone();
         System.out.println("\nRight Rotation : ");
         rotateRight(arrClone, d);
-        Printer.print(arrClone);
+        Utility.print(arrClone);
     }
 }

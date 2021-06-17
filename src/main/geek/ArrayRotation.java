@@ -1,6 +1,5 @@
 package main.geek;
 
-import main.sorting.Sorting;
 import main.utils.Utility;
 
 import java.util.Scanner;
@@ -9,7 +8,7 @@ public class ArrayRotation {
 
     private static void reverse(int[] arr, int start, int end) {
         while (start < end) {
-            Sorting.swap(start, end, arr);
+            Utility.swap(start, end, arr);
             start++;
             end--;
         }

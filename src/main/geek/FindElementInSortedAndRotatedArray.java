@@ -11,12 +11,14 @@ public class FindElementInSortedAndRotatedArray {
         if (A[mid] == key)
             return mid;
 
+        //If left array is sorted
         if (A[l] <= A[mid]) {
+            //key is in left half
             if (key >= A[l] && key <= A[mid])
                 return search(A, l, mid - 1, key);
             return search(A, mid + 1, h, key);
         }
-
+        //else right array will be sorted
         if (key >= A[mid] && key <= A[h])
             return search(A, mid + 1, h, key);
         return search(A, l, mid - 1, key);

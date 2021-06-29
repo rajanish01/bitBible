@@ -1,5 +1,6 @@
 package main.utils;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Utility {
@@ -9,9 +10,7 @@ public class Utility {
     }
 
     public static void print(int[] array) {
-        for (int element : array) {
-            System.out.print(element + " ");
-        }
+        System.out.println(Arrays.toString(array));
     }
 
     public static void print(String data) {
